@@ -9,7 +9,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -28,4 +27,4 @@ jobs:
 
     - name: Rodar testes com PyTest
       run: |
-        pytest
+        PYTHONPATH=src python -m pytest tests/
